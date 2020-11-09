@@ -1,0 +1,8 @@
+/*
+ * Plaats in dit bestand de css nodig om je kaart te doen werken.
+ */
+
+ #stationMap {
+     height: 500px;
+     width: 100%;    
+ }

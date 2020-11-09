@@ -1,0 +1,101 @@
+@import "fonts.css";
+
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  margin: 15px 20px 15px 25px;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    'header header header header'
+    'main main main right'
+    'footer footer footer footer';
+}
+header { grid-area: header; }
+section { grid-area: main; }
+aside { grid-area: right; }
+footer { grid-area: footer; }
+
+header .logo,
+header nav {
+  margin: 0;
+  display: inline-block;
+}
+header .logo {
+  width: 19%;
+}
+header nav {
+  width: 80%;
+  text-align: right;
+}
+header nav ul {
+  margin: 0;
+  padding: 0;
+}
+header nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 25px;
+}
+header nav ul li img {
+  margin: 0;
+
+}
+
+h1 {
+  font-family: "Steelfish", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: rgb(151,0,12);
+}
+h2 {
+  font-family: "Steelfish", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: rgb(196, 0, 9);
+}
+h3 {
+  font-family: Arial, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: rgb(104,103,108);
+}
+p {
+  font-family: Arial, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: rgb(104,103,108);
+}
+ul {
+  list-style-image: url("assets/list-item.png");
+}
+
+article img,
+article .content {
+  display: inline-block;
+}
+article img {
+  width: calc(33% - 50px);
+}
+article .content {
+  width: calc(67% - 45px);
+}
+
+button,
+a.button,
+input[type=submit] {
+  background-color: rgb(151, 0, 12);
+  color: white;
+  padding: 15px auto;
+}
+button:hover, button:active
+a.button:hover, a.button:active
+input[type=submit]:hover, input[type=submit]:active  {
+  background-color: rgb(196, 0, 9);
+}
+
+footer {
+  text-align: center;
+}

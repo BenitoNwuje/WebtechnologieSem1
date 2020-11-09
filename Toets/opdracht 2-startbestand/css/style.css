@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    font-family: "Times new roman";
+    font-weight: 400;
+    font-size: 14px;
+    text-align: justify;
+    color: #3a3a3a;
+}
+
+/* The grid container */
+body {
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    grid-template-areas: 
+    'header header header' 
+    'main main right' 
+    'footer footer footer';
+      /* grid-column-gap: 10px; - if you want gap between the columns */
+}
+
+/* Style the header */
+header {
+    grid-area: header;
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: left;
+    font-size: 35px;
+    height: 100px;
+}
+
+main, aside {
+    padding: 10px;
+}
+
+/* Style the left column */
+main {
+    grid-area: main;
+}
+
+/* Style the right column */
+aside {
+    grid-area: right;
+}
+aside img {
+    width: 100%}
+
+/* Style the footer */
+footer {
+    grid-area: footer;
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+body {
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    'header' 
+    'main' 
+    'right' 
+    'footer';
+  }
+}
+
+/* text */
+h1, h2, h3{
+    font-family: "Arial", "Georgia", sans-serif;
+    color: #006ab3;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 20px; 
+}
+
+h2{
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 30px;
+}
+h2{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/* header */
+header, header nav, header nav ul, header nav ul li {
+    display: flex;
+}
+
+header img {
+    height: 60px;
+}
+header nav {
+    width:100%;
+    align-content:center;}
+
+header nav ul{
+    width: 100%;
+}
+nav ul li {
+    margin-left: 5%;
+    font-family: "Arial", "Georgia", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #3a3a3a;
+}

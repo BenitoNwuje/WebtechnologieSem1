@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Steelfish";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/AP_steelfish/ot/steelfish rg.otf");
+}
+@font-face {
+  font-family: "Steelfish";
+  font-weight: normal;
+  font-style: italic;
+  src: url("../fonts/AP_steelfish/ot/steelfish rg it.otf");
+}

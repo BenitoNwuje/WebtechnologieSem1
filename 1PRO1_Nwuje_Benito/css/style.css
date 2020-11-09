@@ -1,0 +1,111 @@
+@font-face {
+    font-family: "Alfphabet";
+    src: url(../fonts/Alfphabet.otf);
+}
+
+
+body {
+    display: grid;
+    grid-template-areas: 
+    'header header header header'
+    'main main main right'
+    'footer footer footer footer';
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    margin-right: 25px;
+    background-color: white;
+}
+.headimg {
+    grid-area: images;
+
+}
+
+.item2{
+    grid-area: links;
+}
+header {
+    grid-area: header;
+    display: grid;
+    grid-template-areas: 
+    'images links';
+}
+
+section {
+    grid-area: main;
+}
+aside {
+    grid-area: right;
+}
+footer {
+    grid-area: footer;
+}
+
+
+h1 {
+    font-family: "Alfphabet";
+    font-size: 20px;
+    font-weight: 800;
+    color: #006ab3;
+}
+h2 {
+    font-family: "Alfphabet";
+    font-size: 16px;
+    font-weight: 400;
+    color: #006ab3;
+}
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #3a3a3a;
+}
+
+button {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 25px;
+}
+
+button:active, a:active {
+    color: #ed6d10;
+}
+
+
+
+#home li {
+    text-transform: capitalize;
+    display: inline;
+    position: sticky;
+}
+
+
+.flex-container {
+    display: flex;
+    width: 25%s;
+}
+.flex-container img {
+    width: 25%;
+    margin: 5px;
+}
+
+button, a {
+    color: #168cda;
+}
+button:active, a:active {
+    color: #ed6d10;
+}
+
+footer{
+    text-align: center;
+    position: sticky;
+    position: -webkit-sticky;
+    bottom: 0; /* required */
+    background-color: #bbb9a3;
+    color: white;
+}
+
+.links li {
+    list-style-image: url(../images/list-item.png);
+}

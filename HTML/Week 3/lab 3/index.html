@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>oefening 30</title>
+</head>
+<body>
+    <header>
+        <h1>Inschrijvingsformulier voor de graduaatsopleidingen van AP</h1>
+    </header>
+    <article>
+        <form action="https://www.example.be" method="GET">
+            <fieldset>
+                <legend>Persoonlijke Info</legend>
+                <label for="voornaam">voornaam:</label>
+                <input type="text" name="voornaam"  placeholder="voornaam"required> 
+                <br>
+                <label for="achternaam">achternaam:</label>
+                <input type="text" name="achternaam"  placeholder="achternaam"required> 
+                <br>
+                <label for="geboortedatum">geboortedatum:</label>
+                <input type="date" name="geboortedatum"  placeholder="dd/mm/jjjj"required>
+                <br>
+                <label for="pasfotoFile">pasfoto:</label>
+                <input type="file" name="pasfoto" id="pasfotoFile" required>
+            </fieldset>
+            <label for="richting">richting:</label>
+            <select name="richting" id="richtingSelect">
+                <option value="iot">IOT</option>
+                <option value="dsn">DSN</option>
+                <option value="prog">PROG</option>
+            </select><br>
+            <label for="avondendagonderwijs">dag- of avondtraject:</label><br>
+            <label for="dagRadio">Dag:</label>
+            <input type="radio" name="traject" id="dagRadio" value="dag" checked><br>
+            <label for="avond">Avond:</label>
+            <input type="radio" name="traject" id="avondRadio" value="avond"><br>
+            <select name="vakken" multiple>
+                <option value="Programmeren">Programmeren</option>
+                <option value="Webtechnologie">Webtechnologie</option>
+                <option value="Netwerken">Netwerken</option>
+            </select><br>
+            <label for="opmerkingen">Opmerkingen:</label>
+            <textarea name="opmerkingen" id="opmerkingenTx" cols="30" rows="10"></textarea> <br>
+            <input type="checkbox" name="akkoord" required><label for="akkoord">Gaat u akkoord met het OER</label>
+        <br>
+            <input type="submit" value="submit"><br>
+            <input type="image"  src="subscribe.png" name="subscribe" width="100" height="20">   
+        </form>
+    </article>
+    <footer>
+        AP-Hogeschool
+    </footer>
+
+
+</body>
+</html>

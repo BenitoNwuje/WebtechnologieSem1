@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, Verdana, sans-serif;
+    background-color: #C8C8C8;
+    color: white;
+    margin: 20px;
+    padding: 10px;
+}
+h1, h2 {
+    color:#ffff;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+h1 {
+    background-color: darkcyan;
+}
+h2 {
+    background-color: #ee3e80;
+}
+p{
+    background-color: #ffff;
+    color: #64645A;
+    padding: 20px;
+}

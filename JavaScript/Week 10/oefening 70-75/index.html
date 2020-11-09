@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Voeg style.css toe aan de pagina -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Het defer attribuut zorgt dat het script pas wordt uitgevoerd zodra de pagina geladen is -->
+    <script src="./js/pageContent.js" defer></script>
+    <!-- Voeg het formValidation.js script toe aan de pagina met het defer attribuut om uit te voeren als de pagina geladen is -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.5.3/cleave.min.js" integrity="sha256-yx/X2dD86fWz9OyQ/ZnQH8BQaS5Ta4OuNJICU17rySE=" crossorigin="anonymous" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.5.3/addons/cleave-phone.be.js" integrity="sha256-qqwpsyMPyku8+5Nt7oQVV9ZC1bFEsv0EYwo+6PoBLAU=" crossorigin="anonymous" ></script>    
+    <script src="./js/formValidation.js" defer></script>
+
+    <!-- Voeg het mapStyle.css bestand toe. Hierin zetten we alle css specifiek voor de kaart -->
+    <link rel="stylesheet" href="css/mapStyle.css">
+    <!-- Voeg het mapScript.js script toe aan de pagina en laad het als de pagina geladen is. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous" />
+    <script src="./js/mapScript.js" defer></script>
+    <script src="./js/extra.js"></script>
+    <title>labo-10</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>TravelByBus inc.</h1>
+            <h2 id="welcomeMessage">
+                <!-- Ingevuld door javascript -->
+            </h2>
+        </div>
+        <nav>
+            <ul id="nav">
+                <li><a href="#busses">Bussen</a></li>
+                <li><a href="#destinations">Bestemmingen</a></li>
+                <li><a href="#info">Info</a></li>
+                <li><a href="#settings">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="tickets">
+            <h2>Tickets</h2>
+            <form id="ticketForm">
+                <fieldset>
+                    <legend>Bestel je ticket</legend>
+                    <label for="name">Naam: </label>
+                    <input type="text" name="name"><br>
+                    <label for="destination">Bestemming: </label>
+                    <select name="destination" id="destinationSelect">
+                        <!-- Ingevuld door javascript. Opties worden dus toegevoegd vanuit code. -->
+                    </select><br>
+                    <label for="date">Datum:</label>
+                    <input type="text" name="date" class="dateField" placeholder="DD/MM/YYYY"><br>
+                    <label for="phoneNr">Telefoonnr.:</label>
+                    <input type="text" name="phoneNr" class="phoneNrField" placeholder="+32"><br>
+                    <label for="creditCard">Creditkaartnr.:</label>
+                    <input type="text" name="creditCard" class="creditCardField"><br>
+                    <input type="submit" value="Bestel">
+                </fieldset>
+            </form>
+        </section>
+        <section id="destinations">
+            <h2>Bestemmingen</h2>
+            <button type="button" id="destinationBtn">Toon bestemmingen</button>
+            <ul id="destinationList">
+                <!-- In te vullen door JavaScript -->
+            </ul>
+        </section>
+        <section id="busses">
+            <h2>Bussen</h2>
+            <!-- In te vullen door JavaScript -->
+        </section>
+        <section id="info">
+            <h2>Info</h2>
+            <article>
+                <h3>Over ons</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus erat at commodo volutpat.
+                    Aliquam sit amet pulvinar sapien. Pellentesque molestie est dui, sit amet vulputate leo blandit non.
+                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis
+                    ac tortor eu libero maximus lacinia interdum nec dui. Suspendisse nec laoreet diam, ornare congue
+                    augue. Donec imperdiet tellus sed nulla tristique, eget pretium elit lobortis. Etiam ultrices
+                    pellentesque iaculis. Nulla lobortis volutpat purus, nec condimentum risus viverra vitae. Nulla
+                    vulputate tellus a scelerisque fermentum. Donec maximus ligula non tincidunt ultrices. In blandit
+                    tempor ex vitae vulputate. </p>
+            </article>
+            <article id="priceArt">
+                <h3>Prijzen</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>bestemming</th>
+                            <th>prijs</th>
+                        </tr>
+                    </thead>
+                    <tbody id="priceTableBody">
+                        <!-- In te vullen door JavaScript -->
+                    </tbody>
+                </table>
+            </article>
+        </section>
+        <section id="settings">
+            <h2>Settings</h2>
+            <form id="settingsForm">
+                <label for="colorSelect">Achtergrondkleur:</label>
+                <select name="backgroundColor" id="colorSelect">
+                    <option value="blue">Blauw</option>
+                    <option value="red">Rood</option>
+                    <option value="white">Wit</option>
+                </select> <br>
+                <fieldset>
+                    <legend>Lijst stijl</legend>
+                    <label for="listStyleType">Cirkel </label>
+                    <input type="radio" name="listStyleType" id="listStyleRadio" value="circle">
+                    <label for="listStyleType">Vierkant</label>
+                    <input type="radio" name="listStyleType" id="listStyleRadio" value="square">
+                </fieldset>
+                <input type="submit" value="submit">
+            </form>
+        </section>
+    </main>
+    <aside>
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" name="userName" id="userNameInput">
+            <input type="submit" value="login" id="submitInput">
+        </form>
+
+        <h2>Openingsuren</h2>
+        <ul id="openingHoursList">
+            <!-- Ingevuld door javascript -->
+        </ul>
+        <div id="stationMap">
+        </div>
+    </aside>
+    <footer>
+        Demo website voor het vak webtechnologie
+    </footer>
+</body>
+
+</html>

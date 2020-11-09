@@ -1,0 +1,51 @@
+#meme_text {
+    background-color: transparent;
+    font-size: 40px;
+    font-family: Impact;
+    color: white;
+    text-shadow: black 0px 0px 10px;
+    width: 600px;
+    position: absolute;
+    left: 15px;
+    top: 400px;  
+}
+
+.multicolortext{
+    animation-name: rainbowLinks;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rainbowLinks {
+    0% {
+        color: red;
+    }
+    15%{
+        color: tomato;
+    }
+    30% {
+        color: yellow;
+    }
+    45%{
+        color:lime;
+    }
+    60%{
+        color:cyan;
+    }
+    75%{
+        color: blue;
+    }
+    90%{
+        color: rebeccapurple;
+
+    }
+    95%{
+        color: rgb(150, 18, 143);
+    }
+    100%{
+        
+        color:magenta;
+    }
+}
+
+

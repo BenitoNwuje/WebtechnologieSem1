@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="nl-BE" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="student AP">
+  <meta name="description" content="kiekes en co">
+  <meta name="keywords" content="kippen, dood, levend">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- leaflet css -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+
+  <!-- leaflet js -->
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   crossorigin=""></script>
+
+  <title>EXAMEN KIPSHOP</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script type="text/javascript" src="./js/javascript.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <img src="./images/logo.svg" alt="logo kipshop" id="logo">
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#shop">Calculator</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+    <hr>
+
+    <h1>Welkom op onze kipshop</h1>
+    <section class="flex-galerij">
+      <div>
+        <h2>Unborn Chicken</h2>
+        <img src="./images/Chicken_1.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+          sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies
+          nec, pellentesque eu, pretium quis, sem.</p>
+      </div>
+      <div>
+        <h2>The whicken</h2>
+        <img src="./images/Chicken_2.jpg">
+
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+          sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies
+          nec, pellentesque eu, pretium quis, sem.</p>
+      </div>
+      <div>
+        <h2>Chicken in black</h2>
+        <img src="./images/Chicken_3.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+          sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies
+          nec, pellentesque eu, pretium quis, sem.</p>
+      </div>
+    </section>
+
+    <section class="flex-galerij">
+      <div>
+        <h2>Useless chicken</h2>
+        <img src="./images/Chicken_4.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+          sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies
+          nec, pellentesque eu, pretium quis, sem.</p>
+      </div>
+      <div>
+        <h2>Useful chicken</h2>
+        <img src="./images/Chicken_5.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+          sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies
+          nec, pellentesque eu, pretium quis, sem.</p>
+      </div>
+      <div>
+        <h2>Dead Chicken</h2>
+        <img src="./images/Chicken_6.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+          sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies
+          nec, pellentesque eu, pretium quis, sem.</p>
+      </div>
+    </section>
+      
+    <section>
+      <h2 id="shop">Chicken prize calculator</h2>
+      <form id="priceForm">
+        <label for="amount">amount: </label>
+        <input type="text" size="3" name="amount" id="amount">
+        <fieldset>
+          <legend>size</legend>
+          Big (8&euro;) <input type="radio" id="big" value="big" name="size">
+          Small (6&euro;) <input type="radio" id="small" value="small" name="size">
+        </fieldset>
+        <label for="type">type: </label>
+        <select name="type" id="typeSelect">
+          <option value="unborn">Unborn Chicken(&euro; +2)</option>
+          <option value="whicken">The whicken(&euro; +2.5)</option>
+          <option value="black">Chicken in black(&euro; +2.8)</option>
+          <option value="useless">Useless chicken(&euro; +2.8)</option>
+          <option value="useful">Useful chicken(&euro; +2)</option>
+          <option value="dead">Dead Chicken(&euro; +3.2)</option>
+        </select><br>
+
+        <input type="submit" value="bereken totaal"> <br>
+        totaal: &euro; <span id="priceSpan"></span>
+          
+      </form>
+    </section>
+  </main>
+
+  <aside>
+    <h2>Contact</h2>
+    <p>
+      <adress>Ellermanstraat 33, Antwerpen</adress><br>
+        <!-- OEFENING 1: Zet een link op het woord "mail" naar het volgende mailadres "kipshop@hotmail.com" -->
+      contact via <a href="mailto:kipshop@hotmail.com">mail</a>
+      <p>
+    <h2>Openingsuren</h2>
+    <ul id="hourList">
+      <!-- Hier komt de data uit contactHourArr -->
+
+    </ul>
+    <h2>Op de kaart</h2>
+    <div id="mapContainer"></div>
+  </aside>
+
+  <footer>
+    <p><!-- OEFENING 2: Zet hier een copyright-symbool in HTML-code --> &copy; 2020 AP-Antwerpen.be | <!-- OEFENING 3: Zet hier een link naar de AP-pagina "https://www.ap.be/privacy-en-cookieverklaring" en zorg ervoor dat deze opent in een nieuw tabblad --> <a href="https://www.ap.be/privacy-en-cookieverklaring" target="blank">Privacy & gebruiksvoorwaarden</a></p>
+  </footer>
+</body>
+
+</html>

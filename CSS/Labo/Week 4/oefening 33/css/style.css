@@ -1,0 +1,21 @@
+* {
+    border: 1px solid black;
+}
+
+header, footer {
+    width: 100%
+}
+
+
+section {
+    width: 62%;
+}
+aside {
+    width: 38%;
+}
+article{
+    border: 1px dashed red;
+}
+nav{
+    width: 50%
+}

@@ -1,0 +1,18 @@
+h1, h2 {
+    color: red;
+    font-weight: bold;
+}
+
+h1{
+    size: 2.4rem;
+}
+h2{
+    size: 2rem;
+    text-decoration: underline;
+}
+p{
+    size: 1.8rem
+}
+img{
+    border: 2px dashed red;
+}

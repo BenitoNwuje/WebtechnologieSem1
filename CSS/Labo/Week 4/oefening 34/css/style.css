@@ -1,0 +1,31 @@
+body {
+    font-size: 14px;
+}
+
+h1{
+    font-style: italic;
+    font-family: Verdana, sans-serif;
+    font-size: 24px;
+    color: red;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 18px;
+    color: darkred;
+    text-decoration-line: underline;
+}
+figcaption{
+    font-size: 11px;
+    font-style: italic;
+}
+ul {
+    list-style-type: square;
+}
+ol {
+    list-style: lower-roman;
+}
+img {
+    width: 150px;
+}
